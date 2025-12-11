@@ -61532,7 +61532,7 @@ ak(){return new A.Iq(new A.AJ(new A.qA("assets/images/profpic1.jpg"),122,null))}
 A.Iq.prototype={
 L(a){return new A.uk(new A.a65(this),null)},
 H9(a,b){var s,r,q=null,p="Henry Heyden",o="[\u02c8h\u025bn\u0279i \u02c8he\u0361\u026ad\u207f]",n="hheyden [\xe6t\u031a] macalester [d\u0251t\u031a] edu",m=A.at(a),l=t.F,k=this.d
-k=b?A.r7(A.c([k,A.q7(p,40),A.q7(o,22.2),A.q7(n,14)],l),B.av,B.bh):A.a_4(A.c([A.BZ(A.nk(k,q,q),1),A.BZ(A.r7(A.c([A.q7(p,40),A.q7(o,22.2),A.q7(n,14)],l),B.hY,B.bh),2)],l),B.aU,B.hY,B.bh)
+k=b?A.r7(A.c([k,A.q7(p,40),A.q7(o,22.2),A.q7(n,14)],l),B.av,B.bh):A.a_4(A.c([A.BZ(A.nk(k,q,q),1),A.BZ(A.r7(A.c([A.q7(p,22),A.q7(o,22.2),A.q7(n,14)],l),B.hY,B.bh),2)],l),B.aU,B.hY,B.bh)
 m=A.BZ(A.rb(q,k,B.G,m.CW,q,q,q,q,q,new A.b4(7.2,7.2,7.2,7.2),q,q,q),1)
 k=A.mq(q,45,q)
 s=A.at(a).ax
