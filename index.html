@@ -1,38 +1,39 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+---
+layout: default
+title : Homepage
+navbar_title: Home
+---
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+        {% include widgets/profile_card_bio_only.html %}
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
+        <!-- Debugging widgets -->
+        {% include widgets/debug_repo_name.html %}
+        {% include widgets/debug_url.html %}
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+        {% if site.data.display.homepage.show_experience %}
+            {% include widgets/experience_card.html %}
+        {% endif %}
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="heyden_site">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+        {% if site.data.display.homepage.show_news %}
+        {% assign count_news = site.news | size %}
+        {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+        {% endif %}
+        {% endif %}
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>heyden_site</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
-</html>
+        {% if site.data.display.homepage.show_selected_publications %}
+        {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+        {%
+        include widgets/publication_card.html
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+        %}
+        {% endif %}
+    </div>
+</div>

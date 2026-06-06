@@ -1,0 +1,58 @@
+primary_name: "[hɛ̃nɹi he͡ɪdⁿn̩]"
+secondary_name: ""
+navbar_name: "Henry Heyden"
+
+positions:
+- name: Cognitive Science Ph.D. Student
+- name: Johns Hopkins University
+
+
+email: "hheyden1@jh.edu"
+# cv_link: link-to-your-cv-file
+# gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID.  TODO: that
+github: henry-h22
+# twitter: your_twitter_id  # Do not include the '@' symbol
+linkedin: henryheyden22
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+  Hi! This summer I have three jobs! I work for the Linguistic and Music departments of Macalester College, doing odd jobs and preparing for next year. I also teach topics like AI/ML, app development, and 3D printing to kids for iD Tech Camps.
+  </p>
+  <p>
+  At the end of summer I'm moving to Baltimore to start a PhD in cognitive science. If anyone has any thoughts on apartment hunting there please do let me know!!!!!
+  </p>
+  <p>
+  My research tends to probe potential interactions between articulatory characteristics of speech and sociological factors by acoustic analysis with machine learning.
+  </p>
+
+portrait_url: /assets/images/photos/portrait.jpg
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+
+education:
+- name: Johns Hopkins University
+  logo: /assets/images/badges/jhu.png
+  position: >- 
+    Department of Cognitive Science <br/>
+    Ph.D. Student
+  date: Sep. 2026 - present
+- name: Macalester College
+  logo: /assets/images/badges/mac.png
+  position: B.A. in Linguistics and Computer Science
+  date: Sep. 2022 - May 2026
+
+# experience:
+# - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+#   position: Research Intern
+#   date: Sep. 2019 - Jul. 2021
+
+awards:
+- name: "The Linguistics Prize for Academic Excellence"
+  date: 2026
+  source: Macalester College Linguistics Department
+- name: The "Weakly Autonomous" Award
+  date: 2026
+  source: Macalester College Computer Science Department
